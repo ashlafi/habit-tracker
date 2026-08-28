@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* 1. Local font declaration */
+@font-face {
+  font-family: 'YekanBakh';
+  src: url('./assets/fonts/YekanBakh-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Apply default font to the Tailwind theme in version 4 */
+@theme {
+  --font-sans: 'YekanBakh', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* 3. Ensure font applies to the entire page body */
+body {
+  font-family: var(--font-sans);
+}
